@@ -56,7 +56,7 @@ def print_menu() -> None:
 
 
 def main():
-    account: Account = Account()
+    account = Account()
 
     while True:
         print_menu()
