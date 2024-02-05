@@ -18,8 +18,8 @@ class Account:
     def print_transaction(self) -> None:
         console.print('\n=================== TRANSACTIONS ===================', style='bold #994C00')
         if len(self.transactions) > 0:
-            for index, transaction in enumerate(self.transactions):
-                console.print(f'[{index + 1}] {transaction}', style='italic #FF9933')
+            for index, transaction in enumerate(self.transactions, 1):
+                console.print(f'[{index}] {transaction}', style='italic #FF9933')
         else:
             console.print('You have no transactions!', style='bold #FF9933')
         console.print('=================== TRANSACTIONS ===================\n', style='bold #994C00')
